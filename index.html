@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GSS DEMO</title>
+  <link  type="text/gss" rel="stylesheet" href="style.gss">
+  <style>
+    body{
+      display: none;
+    }
+    .gss-ready body{
+      display: block;
+    }
+  </style>
+<script>
+GSS_CONFIG = {
+  worker: "gss/dist/worker.js",
+  useWorker: !!window.Worker,
+  fractionalPixels: false,
+  resizeDebounce: 50, // (ms)
+  debug: false
+};
+
+</script>
+<script src="gss/dist/gss.js"></script>
+</head>
+<body>
+  <div class="container">
+    container
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.container {
+  background-color: #CCC;
+  width: == ::window[width] / 2;
+  height: == ::window[height] / 2;
+  center-x: == ::window[center-x];
+  center-y: == ::window[center-y];
+  font-size: == ::[width] / 8;
+}
+.box1 {
+  center-x: == ::parent[center-x];
+  center-y: == ::parent[center-y];
+  width: == ::parent[width] / 2;
+  height: == ::parent[height] / 2;
+  background-color: #F00;
+  font-size: == ::[width] / 4;
+}
+.box2 {
+  right: == ::parent[right];
+  top: == ::parent[top];
+  width: == ::parent[width] / 6;
+  height: == ::parent[height] / 6;
+  background-color: #00F;
+  font-size: == ::[width] / 4;
+}
